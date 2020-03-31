@@ -1,0 +1,13 @@
+<launch>
+
+  <node name="rqt_multiplot_all"
+
+        pkg="rqt_multiplot"
+
+        type="rqt_multiplot"
+
+        args="--multiplot-run-all --multiplot-config /home/bbpnrsoa/.opt/nrpStorage/myoarm_dep/rqt_multiplot.xml" />
+
+  <rosparam param='/cardsflow_xml'>'/home/bbpnrsoa/.gazebo/models/musc_le/cardsflow.xml'</rosparam>
+
+</launch>

@@ -1,0 +1,15 @@
+<bibi 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://schemas.humanbrainproject.eu/SP10/2014/BIBI" xsi:schemaLocation="http://schemas.humanbrainproject.eu/SP10/2014/BIBI ../bibi_configuration.xsd">
+  <brainModel>
+    <file>idle_brain.py</file>
+    <populations population="neurons" xsi:type="Range" from="0" to="2" />
+    <populations population="record" xsi:type="Range" from="0" to="2" />
+  </brainModel>
+  <bodyModel>musc_le_table/model.sdf</bodyModel>
+  <transferFunction src="plot_weights.py" active="true" priority="0" xsi:type="PythonTransferFunction" />
+  <transferFunction src="a_muscle_feedback.py" active="true" priority="0" xsi:type="PythonTransferFunction" />
+  <transferFunction src="b_muscle_controller.py" active="true" priority="0" xsi:type="PythonTransferFunction" />
+  <transferFunction src="c_dep_controller.py" active="true" priority="0" xsi:type="PythonTransferFunction" />
+  <transferFunction src="state_machine.py" active="false" priority="0" xsi:type="PythonTransferFunction" />
+</bibi>
